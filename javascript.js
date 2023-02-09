@@ -55,6 +55,7 @@ for(let i = 0; i < newAmount; i++){
     }
 }
 function smallerGrid(){
+    if(0 < newAmount){
     const element = document.getElementById("container");
     element.remove();
     --newAmount;
@@ -86,6 +87,10 @@ function smallerGrid(){
             populate.style.flex = "1";
         }
     }
+    }else{
+        return;
+    }
+
     const tiles = document.querySelectorAll('#populate');
 
     tiles.forEach((tile) => {
@@ -99,6 +104,7 @@ function smallerGrid(){
 
 
 function biggerGrid(){
+    if(100 > newAmount){
     const element = document.getElementById("container");
     element.remove();
     ++newAmount;
@@ -131,6 +137,10 @@ function biggerGrid(){
             
         }
     }
+}
+else{
+    return;
+}
     const tiles = document.querySelectorAll('#populate');
 
 tiles.forEach((tile) => {
