@@ -30,7 +30,7 @@ page.appendChild(container);
 const row = document.createElement('div')
 row.classList.add("row");
 
-let newAmount = 10;
+let newAmount = 50;
 let rowNum = 0;
 
 smallButton.addEventListener("click", smallerGrid);
@@ -86,7 +86,17 @@ function smallerGrid(){
             populate.style.flex = "1";
         }
     }
+    const tiles = document.querySelectorAll('#populate');
+
+    tiles.forEach((tile) => {
+
+    // and for each one we add a 'hover' listener
+    tile.addEventListener("mouseover", () =>{
+        tile.style.backgroundColor = "black";
+    });
+});
 }
+
 
 function biggerGrid(){
     const element = document.getElementById("container");
@@ -118,8 +128,28 @@ function biggerGrid(){
             populate.style.border = '1px solid black';
             row.appendChild(populate);
             populate.style.flex = "1";
+            
         }
     }
+    const tiles = document.querySelectorAll('#populate');
+
+tiles.forEach((tile) => {
+
+    // and for each one we add a 'hover' listener
+    tile.addEventListener("mouseover", () =>{
+        tile.style.backgroundColor = "black";
+    });
+});
     
     
 }
+
+const tiles = document.querySelectorAll('#populate');
+
+tiles.forEach((tile) => {
+
+    // and for each one we add a 'hover' listener
+    tile.addEventListener("mouseover", () =>{
+        tile.style.backgroundColor = "black";
+    });
+});
