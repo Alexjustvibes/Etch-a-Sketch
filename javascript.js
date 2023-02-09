@@ -42,14 +42,12 @@ for(let i = 0; i < newAmount; i++){
     let row = document.createElement('div');
     row.setAttribute("id", "row");
     row.classList.add("row" + rowNum);
-    row.style.border= '1px solid black';
     container.appendChild(row);
     row.style.display = "flex";
     row.style.flex = "1";
     for(let j = 0; j <newAmount; j++){
         let populate = document.createElement('div');
         populate.setAttribute("id", "populate");
-        populate.style.border = '1px solid black';
         row.appendChild(populate);
         populate.style.flex = "1";
     }
@@ -75,14 +73,12 @@ function smallerGrid(){
         let row = document.createElement('div');
         row.setAttribute("id", "row");
         row.classList.add("row" + rowNum);
-        row.style.border= '1px solid black';
         container.appendChild(row);
         row.style.display = "flex";
         row.style.flex = "1";
         for(let j = 0; j <newAmount; j++){
             let populate = document.createElement('div');
             populate.setAttribute("id", "populate");
-            populate.style.border = '1px solid black';
             row.appendChild(populate);
             populate.style.flex = "1";
         }
@@ -124,14 +120,12 @@ function biggerGrid(){
         let row = document.createElement('div');
         row.setAttribute("id", "row");
         row.classList.add("row" + rowNum);
-        row.style.border= '1px solid black';
         container.appendChild(row);
         row.style.display = "flex";
         row.style.flex = "1";
         for(let j = 0; j <newAmount; j++){
             let populate = document.createElement('div');
             populate.setAttribute("id", "populate");
-            populate.style.border = '1px solid black';
             row.appendChild(populate);
             populate.style.flex = "1";
             
